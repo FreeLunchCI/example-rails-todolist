@@ -1,10 +1,14 @@
-# example rails + docker-kubernetes-freelunchci app
+# Example Rails Todo App
 
-This is an example rails app with docker+kubernetes+freelunchci. Please note that this app is not intended to be a production ready app or the base for a production rails app.
+This is an example rails todo app. The app was built as an example/reference application for use with freelunchci.
+
+This app is dockerized and will be kubernetized and freelunchized ;-)
 
 
 ## Notices
+* this app is not intended to be a production ready app or the base for a production app, its purpose is for example/demonstration usage only.
 * please see the docs directory for more documentation / information.
+
 
 
 ## Prerequisites
@@ -30,7 +34,7 @@ This is an example rails app with docker+kubernetes+freelunchci. Please note tha
 
 
 ## Tests
-* nyi
+* `docker-compose run -e "RAILS_ENV=test" web rails test test/models/todo_test.rb`
 
 
 ## Developer
